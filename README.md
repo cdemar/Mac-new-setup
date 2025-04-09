@@ -174,3 +174,8 @@ brew update
 ```bash
 brew upgrade
 ```
+
+If you are questioning if everything is okay on your machine you can do
+```bash
+brew doctor
+```
