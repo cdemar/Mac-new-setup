@@ -37,6 +37,7 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
     - font-meslo-lg-nerd-font
     - powerlevel10k
         - will need to run the following 2 commands:
+
 '''css
 echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 '''
