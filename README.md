@@ -72,4 +72,12 @@ echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlight
 source ~/.zshrc
 ```
 
-### Now we are ready to start working on NeoVim
+### Now we are ready to start working on Wezterm and NeoVim
+let us first start with getting the ~/.config available to be used as we will be putting some data inside that folder
+```sh
+sudo chown -R "$USER":staff ~/.config  chmod 700 ~/.config
+```
+now that is done we can run the following code
+```sh
+cd ~/.config
+```
