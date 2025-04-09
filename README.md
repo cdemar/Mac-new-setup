@@ -113,14 +113,8 @@ Let's first install these 2 plugins.
 ```bash
 brew install ripgrep node
 ```
-Let us just do some housekeeping by getting rid of some things not needed after doing all of the brew installs by doing these 2 lines
-```bash
-brew cleanup -s
-```
-```bash
-brew cleanup --prune=all
-```
-Now lets install the started files and folders
+
+Now let's install the started files and folders
 ```bash
 mkdir -p ~/.config/nvim
 ```
@@ -137,3 +131,22 @@ mkdir -p lua/cdemar/plugins
 touch lua/cdemar/lazy.lua
 ```
 Make sure you change cdemar to whatever you want yours to be named.
+
+
+
+### Here is how to do the upkeep of your brew items
+This is to clean things you installed
+```bash
+brew cleanup -s
+```
+```bash
+brew cleanup --prune=all
+```
+
+This updates both Homebrew and the things you have installed
+```bash
+brew update
+```
+```bash
+brew upgrade
+```
