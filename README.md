@@ -36,16 +36,40 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
         - to use this just type 'sudo htop'
     - font-meslo-lg-nerd-font
     - powerlevel10k
-        - will need to run the following 2 commands:
-```css
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
-```
-
-```css
-source ~/.zshrc
-```
     - zsh-autosuggestions
     - zsh-syntax-highlighting
     - eza
-- This is the stuff to install NeoVim
-    - 
+    - nvim
+
+### After you run all of these you will then want to test them out by doing these commands:
+For 'htop'
+```sh
+sudo htop
+```
+
+For 'powerlevel10k
+```sh
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+```
+
+```sh
+source ~/.zshrc
+```
+
+for 'zsh-autosuggestions'
+```sh
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
+```sh
+source ~/.zshrc
+```
+
+for 'zsh-syntax-highlighting'
+```sh
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
+```sh
+source ~/.zshrc
+```
+
+### Now we are ready to start working on NeoVim
