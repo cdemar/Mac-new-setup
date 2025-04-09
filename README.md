@@ -95,12 +95,6 @@ mkdir -p ~/.config/wezterm
 ```bash
 touch ~/.config/wezterm/wezterm.lua
 ```
-```bash
-mkdir -p ~/.config/nvim
-```
-```bash
-touch ~/.config/nvim/init.lua
-```
 
 Now that we can make the folders let's first do the easier of the two out of the way.
 run this code to get into the wezterm folder then using nvim as our editor we can add code to make it look nicer.
@@ -126,3 +120,20 @@ brew cleanup -s
 ```bash
 brew cleanup --prune=all
 ```
+Now lets install the started files and folders
+```bash
+mkdir -p ~/.config/nvim
+```
+```bash
+touch init.lua
+```
+```bash
+mkdir -p lua/cdemar/core
+```
+```bash
+mkdir -p lua/cdemar/plugins
+```
+```bash
+touch lua/cdemar/lazy.lua
+```
+Make sure you change cdemar to whatever you want yours to be named.
