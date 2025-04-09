@@ -13,6 +13,7 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
   - Under 'Desktop and Dock' turn on 'Automatically hid and show Dock'
 
 ### Instal of these
+To do this from the App Store or from 'mas' you need to make sure you are logged into your account.
 - Go to the App Store and download
   - Password manager
   - Grammarly
@@ -22,6 +23,29 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
   - Keynote
   - Numbers
   - Pages
+```bash
+brew install mas
+```
+```bash
+mas search {fill in}
+```
+for example if pages
+```scss
+409201541  Pages (13.2)  Apple
+```
+```bash
+mas install 409201541
+```
+
+You can check for updates by doing this
+```bash
+mas upgrade
+```
+If you want to update a specific app then just add the number at the end like
+```bash
+mas upgrade 409201541
+```
+
 - Install
     - [Homebew](https://brew.sh)
     - [Wezterm](https://wezterm.org)
