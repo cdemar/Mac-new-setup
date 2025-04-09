@@ -102,7 +102,7 @@ mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.lua
 ```
 
-Now that we can make the folders let's first do the easier of the two out of the way first.
+Now that we can make the folders let's first do the easier of the two out of the way.
 run this code to get into the wezterm folder then using nvim as our editor we can add code to make it look nicer.
 
 ```bash
@@ -110,4 +110,19 @@ cd ~/.config/wezterm
 ```
 ```bash
 nvim wezterm.lua
+```
+
+### NeoVim set up
+I mainly used [this](https://www.youtube.com/watch?v=6pAG3BHurdM&list=PLnu5gT9QrFg36OehOdECFvxFFeMHhb_07&index=14&t=324s) YouTube video to get my setup, but I will tell you the things I picked from his and what I picked that wasn't from this video.
+
+Let's first install these 2 plugins.
+```bash
+brew install ripgrep node
+```
+Let us just do some housekeeping by getting rid of some things not needed after doing all of the brew installs by doing these 2 lines
+```bash
+brew cleanup -s
+```
+```bash
+brew cleanup --prune=all
 ```
