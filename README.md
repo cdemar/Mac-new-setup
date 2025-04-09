@@ -30,7 +30,7 @@ brew install mas
 mas search {fill in}
 ```
 for example if pages
-```scss
+```diff
 409201541  Pages (13.2)  Apple
 ```
 ```bash
