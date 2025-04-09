@@ -83,7 +83,7 @@ We should see something like this
 ```
 If it says 'Permission denied, or if the file isn't readable, fix it with this
 ```bash
-sudo chmod 644 ~/.config
+chmod 644 ~/.config
 ```
 That sets the file to be:
 - Read/write for you
