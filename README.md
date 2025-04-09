@@ -43,41 +43,71 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
 
 ### After you run all of these you will then want to test them out by doing these commands:
 For 'htop'
-```sh
+```bash
 sudo htop
 ```
 
 For 'powerlevel10k
-```sh
+```bash
 echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 ```
 
-```sh
+```bash
 source ~/.zshrc
 ```
 
 for 'zsh-autosuggestions'
-```sh
+```bash
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 ```
-```sh
+```bash
 source ~/.zshrc
 ```
 
 for 'zsh-syntax-highlighting'
-```sh
+```bash
 echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 ```
-```sh
+```bash
 source ~/.zshrc
 ```
 
 ### Now we are ready to start working on Wezterm and NeoVim
-let us first start with getting the ~/.config available to be used as we will be putting some data inside that folder
-```sh
-sudo chown -R "$USER":staff ~/.config  chmod 700 ~/.config
+let us first start with getting the ~/.config available to be used as we will be putting some data inside that folder. We can see what the permissions level is by typing
+```bash
+ls -l ~/.config
 ```
-now that is done we can run the following code
-```sh
-cd ~/.config
+We should see something like this
+```diff
+-rw-------  1 cdemar  staff  1234 Apr 4 12:00 wezterm.lua
+```
+If it says 'Permission denied, or if the file isn't readable, fix it with this
+```bash
+chmod 644 ~/.config/wezterm/wezterm.lua
+```
+That sets the file to be:
+- Read/write for you
+- Readable for WezTerm (which runs under your user account)
+Now let's see if there is a folder in ~/.config named wezterm and another named nvim. If there is not then run the following code
+```bash
+mkdir -p ~/.config/wezterm
+```
+```bash
+touch ~/.config/wezterm/wezterm.lua
+```
+```bash
+mkdir -p ~/.config/nvim
+```
+```bash
+touch ~/.config/nvim/init.lua
+```
+
+Now that we can make the folders let's first do the easier of the two out of the way first.
+run this code to get into the wezterm folder then using nvim as our editor we can add code to make it look nicer.
+
+```bash
+cd ~/.config/wezterm
+```
+```bash
+nvim wezterm.lua
 ```
