@@ -179,3 +179,7 @@ If you are questioning if everything is okay on your machine you can do
 ```bash
 brew doctor
 ```
+
+```bash
+brew install --cask {add what you want}
+```
