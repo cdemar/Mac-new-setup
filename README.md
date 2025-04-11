@@ -11,6 +11,9 @@ This is for future me when I factory set my Mac or when I buy a new Mac so I don
   - Go to Touchpad and change from 'click' to 'tap to click'
   - Change the second click 'tap with 2 fingers' to 'click on bottom right'
   - Under 'Desktop and Dock' turn on 'Automatically hid and show Dock'
+  - Go to Spotlight and turn off: Events & Reminders, Fonts, Images, Movies, Music, Other, Presentations, Siri Suggestions, Tips
+  - In the network right click and set 'Service Order to: USB 10/100/1000 LAN => Wi-FI => Thunderbolt Bridge
+  - In Keyboard => go to Edit in 'Text Input => turn off: Correct spelling automatically, Capitalize words automatically, show inline predictive text
 
 ### Instal of these
 To do this from the App Store or from 'mas' you need to make sure you are logged into your account.
